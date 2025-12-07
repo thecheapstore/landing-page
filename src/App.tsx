@@ -42,25 +42,25 @@ function App() {
     {
       title: 'Custom Landscaping & Design',
       description: 'Transform your outdoor space with professional landscaping design services including garden beds, mulching, plant installation, and hardscaping solutions in Buffalo NY.',
-      image: 'https://images.pexels.com/photos/1105019/pexels-photo-1105019.jpeg?auto=compress&cs=tinysrgb&w=1200&h=600',
+      image: 'https://i.ibb.co/GvjQfxD7/landscape.png',
       icon: Leaf,
     },
     {
       title: 'Tree Removal & Trimming Services',
       description: 'Safe and professional tree removal, tree trimming, stump grinding, and emergency tree services to protect your property and enhance curb appeal.',
-      image: 'https://images.pexels.com/photos/8353813/pexels-photo-8353813.jpeg?auto=compress&cs=tinysrgb&w=1200&h=600',
+      image: 'https://i.ibb.co/998pPc6d/tree.png',
       icon: Trees,
     },
     {
       title: 'Fall & Spring Cleanup Services',
       description: 'Comprehensive seasonal cleanup including leaf removal, debris clearing, bed preparation, lawn aeration, and property winterization services.',
-      image: 'https://images.pexels.com/photos/4505923/pexels-photo-4505923.jpeg?auto=compress&cs=tinysrgb&w=1200&h=600',
+      image: 'https://i.ibb.co/pBc6HG87/cleanup.png',
       icon: Wind,
     },
     {
       title: 'Snow Removal & Winter Services',
       description: 'Reliable snow plowing, snow blowing, ice management, and winter property maintenance to keep your home or business safe during Buffalo winters.',
-      image: 'https://images.pexels.com/photos/1571458/pexels-photo-1571458.jpeg?auto=compress&cs=tinysrgb&w=1200&h=600',
+      image: 'https://i.ibb.co/kV6s8qVQ/snow.png',
       icon: Snowflake,
     },
   ];
