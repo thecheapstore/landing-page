@@ -219,22 +219,20 @@ function App() {
                 <span className="text-white font-medium">Buffalo's #1 Lawn Care Service</span>
               </div>
 
-           <h1
-  className="hero-h1 text-5xl sm:text-6xl lg:text-6xl xl:text-7xl font-bold text-white animate-slide-up"
+           <h1 
+  className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white leading-[1.15] pb-2 animate-slide-up"
   style={{ animationDelay: '0.4s', opacity: 0 }}
 >
-  <span className="h1-line">Professional</span>
+  Professional
 
-  <span className="h1-line gradient-line bg-gradient-to-r from-green-400 to-green-200 bg-clip-text text-transparent">
+  <span className="block bg-gradient-to-r from-green-400 to-green-200 bg-clip-text text-transparent">
     Lawn Care & Landscaping
   </span>
 
-  <span className="h1-subline h1-line text-4xl sm:text-5xl mt-4 block">
+  <span className="block text-4xl sm:text-5xl mt-4">
     Services in Buffalo, NY
   </span>
 </h1>
-
-
               <p className="text-xl sm:text-2xl text-gray-200 animate-slide-up" style={{ animationDelay: '0.6s', opacity: 0 }}>
                 Expert lawn mowing, landscaping design, tree removal, and seasonal cleanup services.
                 Transform your outdoor space with Western New York's most trusted lawn care professionals.
