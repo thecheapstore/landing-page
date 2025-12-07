@@ -224,7 +224,7 @@ function App() {
   style={{ animationDelay: '0.4s', opacity: 0 }}
 >
   <span className="h1-line">Professional</span>
-
+{" "}
   <span className="h1-line gradient-line bg-gradient-to-r from-green-400 to-green-200 bg-clip-text text-transparent">
     Lawn Care & Landscaping
   </span>
