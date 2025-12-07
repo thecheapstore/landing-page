@@ -36,7 +36,7 @@ function App() {
     {
       title: 'Professional Lawn Mowing & Maintenance',
       description: 'Expert lawn care services including mowing, edging, trimming, and fertilization to keep your grass healthy, lush, and perfectly manicured throughout the growing season.',
-      image: 'https://images.pexels.com/photos/1301856/pexels-photo-1301856.jpeg?auto=compress&cs=tinysrgb&w=1200&h=600',
+      image: 'https://i.ibb.co/TBDnJY0K/Gemini-Generated-Image-2jz3c82jz3c82jz3.png',
       icon: Scissors,
     },
     {
