@@ -136,3 +136,45 @@
 html {
   scroll-behavior: smooth;
 }
+
+/* HERO heading safe spacing to avoid descender clipping */
+.hero-h1 {
+  display: inline-block;    /* prevents parent issues and ensures padding applies */
+  line-height: 1.18;        /* safe line-height for stacked large headings */
+  padding-bottom: 0.375rem; /* small bottom breathing room for descenders */
+  margin-bottom: 0.25rem;   /* small extra gap after heading */
+}
+
+/* Each stacked line inside the H1 (keeps consistent spacing and allows per-line tweaks) */
+.hero-h1 .h1-line {
+  display: block;
+  margin-bottom: 0.08rem; /* tiny gap between stacked lines */
+}
+
+/* Slightly larger gap before the subline (the smaller final line) */
+.hero-h1 .h1-subline {
+  margin-top: 0.6rem;
+  margin-bottom: 0;
+}
+
+/* Responsive adjustments for very small screens */
+@media (max-width: 640px) {
+  .hero-h1 {
+    line-height: 1.12;
+    padding-bottom: 0.25rem;
+  }
+  .hero-h1 .h1-line {
+    margin-bottom: 0.06rem;
+  }
+}
+
+/* Larger screens get a touch more spacing */
+@media (min-width: 1280px) {
+  .hero-h1 {
+    line-height: 1.20;
+    padding-bottom: 0.45rem;
+  }
+  .hero-h1 .h1-line {
+    margin-bottom: 0.12rem;
+  }
+}
