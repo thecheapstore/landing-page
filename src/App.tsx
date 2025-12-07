@@ -209,20 +209,6 @@ function App() {
           ))}
         </div>
 
-        {/* Floating Stats Cards */}
-        <div className="absolute top-20 right-10 z-10 hidden lg:block">
-          <div className="bg-white/95 backdrop-blur-md rounded-2xl shadow-2xl p-6 animate-slide-in-right" style={{ animationDelay: '1.2s', opacity: 0 }}>
-            <div className="text-4xl font-bold text-green-600 mb-2">500+</div>
-            <div className="text-gray-700 font-medium">Happy Customers</div>
-          </div>
-        </div>
-
-        <div className="absolute bottom-32 left-10 z-10 hidden lg:block">
-          <div className="bg-white/95 backdrop-blur-md rounded-2xl shadow-2xl p-6 animate-slide-in-left" style={{ animationDelay: '1.4s', opacity: 0 }}>
-            <div className="text-4xl font-bold text-green-600 mb-2">15+</div>
-            <div className="text-gray-700 font-medium">Years Experience</div>
-          </div>
-        </div>
 
         {/* Hero Content */}
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
