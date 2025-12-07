@@ -210,16 +210,25 @@ function App() {
           ))}
         </div>
 
-        {/* Hero Content */}
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              {/* Hero Content */}
+        <div className="relative z-30 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="text-left space-y-8 pb-6">
-              <div className="inline-flex items-center space-x-2 bg-green-600/90 backdrop-blur-sm px-6 py-3 rounded-full animate-slide-up" style={{ animationDelay: '0.2s', opacity: 0 }}>
+            <div
+              className="text-left space-y-8 pb-8"
+              style={{ overflow: 'visible' }} // ensure animated children won't be clipped
+            >
+              <div
+                className="inline-flex items-center space-x-2 bg-green-600/90 backdrop-blur-sm px-6 py-3 rounded-full animate-slide-up"
+                style={{ animationDelay: '0.2s', opacity: 0, zIndex: 40 }}
+              >
                 <Leaf className="w-5 h-5 text-white" />
                 <span className="text-white font-medium">Buffalo's #1 Lawn Care Service</span>
               </div>
 
-              <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white leading-[1.15] animate-slide-up" style={{ animationDelay: '0.4s', opacity: 0 }}>
+              <h1
+                className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white leading-[1.18] lg:leading-[1.12] animate-slide-up"
+                style={{ animationDelay: '0.4s', opacity: 0, overflow: 'visible' }}
+              >
                 Professional
                 <span className="block bg-gradient-to-r from-green-400 to-green-200 bg-clip-text text-transparent">
                   Lawn Care & Landscaping
@@ -227,7 +236,10 @@ function App() {
                 <span className="block text-4xl sm:text-5xl mt-4">Services in Buffalo, NY</span>
               </h1>
 
-              <p className="text-xl sm:text-2xl text-gray-200 animate-slide-up" style={{ animationDelay: '0.6s', opacity: 0 }}>
+              <p
+                className="text-xl sm:text-2xl text-gray-200 animate-slide-up"
+                style={{ animationDelay: '0.6s', opacity: 0 }}
+              >
                 Expert lawn mowing, landscaping design, tree removal, and seasonal cleanup services.
                 Transform your outdoor space with Western New York's most trusted lawn care professionals.
               </p>
@@ -260,7 +272,7 @@ function App() {
               </div>
             </div>
 
-            {/* Image Grid */}
+            {/* Image Grid (unchanged, stays to the right) */}
             <div className="hidden lg:grid grid-cols-2 gap-4 animate-scale-in" style={{ animationDelay: '1s', opacity: 0 }}>
               <div className="space-y-4">
                 <img
