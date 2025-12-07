@@ -172,19 +172,19 @@ function App() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section - Highly Animated & Attractive */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      <section className="relative min-h-screen flex items-center justify-center">
         {/* Dynamic Image Slideshow Background */}
         <div className="absolute inset-0">
           {heroImages.map((image, index) => (
             <div
               key={index}
-              className={absolute inset-0 transition-opacity duration-2000 ${
+              className={`absolute inset-0 transition-opacity duration-2000 ${
                 index === currentHeroImage ? 'opacity-100' : 'opacity-0'
-              }}
+              }`}
             >
               <img
                 src={image}
-                alt={Professional Lawn Care Buffalo NY ${index + 1}}
+                alt={`Professional Lawn Care Buffalo NY ${index + 1}`}
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-green-900/60"></div>
@@ -199,28 +199,27 @@ function App() {
               key={i}
               className="absolute text-green-400 opacity-20 animate-bounce"
               style={{
-                top: ${Math.random() * 100}%,
-                left: ${Math.random() * 100}%,
-                width: ${20 + Math.random() * 30}px,
-                height: ${20 + Math.random() * 30}px,
-                animationDuration: ${3 + Math.random() * 3}s,
-                animationDelay: ${Math.random() * 2}s,
+                top: `${Math.random() * 100}%`,
+                left: `${Math.random() * 100}%`,
+                width: `${20 + Math.random() * 30}px`,
+                height: `${20 + Math.random() * 30}px`,
+                animationDuration: `${3 + Math.random() * 3}s`,
+                animationDelay: `${Math.random() * 2}s`,
               }}
             />
           ))}
         </div>
 
-
         {/* Hero Content */}
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="text-left space-y-8">
+            <div className="text-left space-y-8 pb-6">
               <div className="inline-flex items-center space-x-2 bg-green-600/90 backdrop-blur-sm px-6 py-3 rounded-full animate-slide-up" style={{ animationDelay: '0.2s', opacity: 0 }}>
                 <Leaf className="w-5 h-5 text-white" />
                 <span className="text-white font-medium">Buffalo's #1 Lawn Care Service</span>
               </div>
 
-              <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white leading-tight animate-slide-up" style={{ animationDelay: '0.4s', opacity: 0 }}>
+              <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white leading-[1.15] animate-slide-up" style={{ animationDelay: '0.4s', opacity: 0 }}>
                 Professional
                 <span className="block bg-gradient-to-r from-green-400 to-green-200 bg-clip-text text-transparent">
                   Lawn Care & Landscaping
@@ -317,7 +316,7 @@ function App() {
             <div className="overflow-hidden rounded-2xl">
               <div
                 className="flex transition-transform duration-700 ease-out"
-                style={{ transform: translateX(-${currentService * 100}%) }}
+                style={{ transform: `translateX(-${currentService * 100}%)` }}
               >
                 {services.map((service, index) => (
                   <div key={index} className="min-w-full px-2">
@@ -374,10 +373,10 @@ function App() {
                 <button
                   key={index}
                   onClick={() => setCurrentService(index)}
-                  className={h-2 rounded-full transition-all duration-300 ${
+                  className={`h-2 rounded-full transition-all duration-300 ${
                     index === currentService ? 'w-8 bg-green-600' : 'w-2 bg-gray-300'
-                  }}
-                  aria-label={View ${services[index].title}}
+                  }`}
+                  aria-label={`View ${services[index].title}`}
                 />
               ))}
             </div>
@@ -392,9 +391,9 @@ function App() {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div
-            className={text-center mb-16 transition-all duration-1000 ${
+            className={`text-center mb-16 transition-all duration-1000 ${
               isVisible['section-features'] ? 'animate-slide-up' : 'opacity-0'
-            }}
+            }`}
           >
             <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
               Why Choose 716 Lawn Care for Your Property?
@@ -409,10 +408,10 @@ function App() {
             {features.map((feature, index) => (
               <div
                 key={index}
-                className={bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 ${
+                className={`bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 ${
                   isVisible['section-features'] ? 'animate-scale-in' : 'opacity-0'
-                }}
-                style={{ animationDelay: ${index * 0.1}s }}
+                }`}
+                style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <div className="bg-green-100 w-16 h-16 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-green-600 transition-colors">
                   <feature.icon className="w-8 h-8 text-green-600" />
@@ -434,9 +433,9 @@ function App() {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div
-            className={text-center mb-16 transition-all duration-1000 ${
+            className={`text-center mb-16 transition-all duration-1000 ${
               isVisible['section-seasonal'] ? 'animate-slide-up' : 'opacity-0'
-            }}
+            }`}
           >
             <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
               Year-Round Lawn Care Services in Buffalo, NY
@@ -451,12 +450,12 @@ function App() {
             {seasonalServices.map((season, index) => (
               <div
                 key={index}
-                className={group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 ${
+                className={`group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 ${
                   isVisible['section-seasonal'] ? 'animate-scale-in' : 'opacity-0'
-                }}
-                style={{ animationDelay: ${index * 0.15}s }}
+                }`}
+                style={{ animationDelay: `${index * 0.15}s` }}
               >
-                <div className={bg-gradient-to-br ${season.color} p-8 sm:p-12 text-white min-h-[280px] flex flex-col justify-center}>
+                <div className={`bg-gradient-to-br ${season.color} p-8 sm:p-12 text-white min-h-[280px] flex flex-col justify-center`}>
                   <season.icon className="w-16 h-16 mb-6 transform group-hover:scale-110 transition-transform duration-300" />
                   <h3 className="text-3xl font-bold mb-4">{season.season}</h3>
                   <p className="text-lg leading-relaxed">{season.services}</p>
@@ -474,9 +473,9 @@ function App() {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div
-            className={text-center mb-16 transition-all duration-1000 ${
+            className={`text-center mb-16 transition-all duration-1000 ${
               isVisible['section-areas'] ? 'animate-slide-up' : 'opacity-0'
-            }}
+            }`}
           >
             <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
               Lawn Care Service Areas Across Western New York
@@ -487,9 +486,9 @@ function App() {
           </div>
 
           <div
-            className={bg-white rounded-2xl shadow-xl p-8 sm:p-12 transition-all duration-1000 ${
+            className={`bg-white rounded-2xl shadow-xl p-8 sm:p-12 transition-all duration-1000 ${
               isVisible['section-areas'] ? 'animate-scale-in' : 'opacity-0'
-            }}
+            }`}
           >
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {[
@@ -535,9 +534,9 @@ function App() {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div
-            className={text-center mb-16 transition-all duration-1000 ${
+            className={`text-center mb-16 transition-all duration-1000 ${
               isVisible['section-testimonials'] ? 'animate-slide-up' : 'opacity-0'
-            }}
+            }`}
           >
             <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
               What Buffalo Homeowners Say About Our Lawn Care
@@ -551,10 +550,10 @@ function App() {
             {testimonials.map((testimonial, index) => (
               <div
                 key={index}
-                className={bg-gradient-to-br from-green-50 to-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 ${
+                className={`bg-gradient-to-br from-green-50 to-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 ${
                   isVisible['section-testimonials'] ? 'animate-scale-in' : 'opacity-0'
-                }}
-                style={{ animationDelay: ${index * 0.15}s }}
+                }`}
+                style={{ animationDelay: `${index * 0.15}s` }}
               >
                 <div className="flex mb-4">
                   {[...Array(testimonial.rating)].map((_, i) => (
@@ -608,9 +607,9 @@ function App() {
       >
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div
-            className={text-center mb-12 transition-all duration-1000 ${
+            className={`text-center mb-12 transition-all duration-1000 ${
               isVisible['section-quote'] ? 'animate-slide-up' : 'opacity-0'
-            }}
+            }`}
           >
             <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
               Request Your Free Lawn Care Quote
@@ -622,9 +621,9 @@ function App() {
           </div>
 
           <div
-            className={bg-gradient-to-br from-green-50 to-white p-8 sm:p-12 rounded-2xl shadow-xl transition-all duration-1000 ${
+            className={`bg-gradient-to-br from-green-50 to-white p-8 sm:p-12 rounded-2xl shadow-xl transition-all duration-1000 ${
               isVisible['section-quote'] ? 'animate-scale-in' : 'opacity-0'
-            }}
+            }`}
             style={{ animationDelay: '0.2s' }}
           >
             <div className="bg-white border-4 border-dashed border-green-300 rounded-xl p-12 text-center">
