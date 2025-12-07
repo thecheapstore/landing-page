@@ -35,32 +35,42 @@ function App() {
   const services = [
     {
       title: 'Professional Lawn Mowing & Maintenance',
-      description: 'Expert lawn care services including mowing, edging, trimming, and fertilization to keep your grass healthy, lush, and perfectly manicured throughout the growing season.',
-      image: 'https://images.pexels.com/photos/1301856/pexels-photo-1301856.jpeg?auto=compress&cs=tinysrgb&w=1200&h=600',
+      description:
+        'Expert lawn care services including mowing, edging, trimming, and fertilization to keep your grass healthy, lush, and perfectly manicured throughout the growing season.',
+      image:
+        'https://images.pexels.com/photos/1301856/pexels-photo-1301856.jpeg?auto=compress&cs=tinysrgb&w=1200&h=600',
       icon: Scissors,
     },
     {
       title: 'Custom Landscaping & Design',
-      description: 'Transform your outdoor space with professional landscaping design services including garden beds, mulching, plant installation, and hardscaping solutions in Buffalo NY.',
-      image: 'https://images.pexels.com/photos/1105019/pexels-photo-1105019.jpeg?auto=compress&cs=tinysrgb&w=1200&h=600',
+      description:
+        'Transform your outdoor space with professional landscaping design services including garden beds, mulching, plant installation, and hardscaping solutions in Buffalo NY.',
+      image:
+        'https://images.pexels.com/photos/1105019/pexels-photo-1105019.jpeg?auto=compress&cs=tinysrgb&w=1200&h=600',
       icon: Leaf,
     },
     {
       title: 'Tree Removal & Trimming Services',
-      description: 'Safe and professional tree removal, tree trimming, stump grinding, and emergency tree services to protect your property and enhance curb appeal.',
-      image: 'https://images.pexels.com/photos/8353813/pexels-photo-8353813.jpeg?auto=compress&cs=tinysrgb&w=1200&h=600',
+      description:
+        'Safe and professional tree removal, tree trimming, stump grinding, and emergency tree services to protect your property and enhance curb appeal.',
+      image:
+        'https://images.pexels.com/photos/8353813/pexels-photo-8353813.jpeg?auto=compress&cs=tinysrgb&w=1200&h=600',
       icon: Trees,
     },
     {
       title: 'Fall & Spring Cleanup Services',
-      description: 'Comprehensive seasonal cleanup including leaf removal, debris clearing, bed preparation, lawn aeration, and property winterization services.',
-      image: 'https://images.pexels.com/photos/4505923/pexels-photo-4505923.jpeg?auto=compress&cs=tinysrgb&w=1200&h=600',
+      description:
+        'Comprehensive seasonal cleanup including leaf removal, debris clearing, bed preparation, lawn aeration, and property winterization services.',
+      image:
+        'https://images.pexels.com/photos/4505923/pexels-photo-4505923.jpeg?auto=compress&cs=tinysrgb&w=1200&h=600',
       icon: Wind,
     },
     {
       title: 'Snow Removal & Winter Services',
-      description: 'Reliable snow plowing, snow blowing, ice management, and winter property maintenance to keep your home or business safe during Buffalo winters.',
-      image: 'https://images.pexels.com/photos/1571458/pexels-photo-1571458.jpeg?auto=compress&cs=tinysrgb&w=1200&h=600',
+      description:
+        'Reliable snow plowing, snow blowing, ice management, and winter property maintenance to keep your home or business safe during Buffalo winters.',
+      image:
+        'https://images.pexels.com/photos/1571458/pexels-photo-1571458.jpeg?auto=compress&cs=tinysrgb&w=1200&h=600',
       icon: Snowflake,
     },
   ];
@@ -69,17 +79,20 @@ function App() {
     {
       name: 'Sarah Johnson',
       rating: 5,
-      text: 'Best lawn care service in Buffalo! 716 Lawn Care transformed our backyard with their professional landscaping. Highly recommend for anyone looking for reliable lawn maintenance.',
+      text:
+        'Best lawn care service in Buffalo! 716 Lawn Care transformed our backyard with their professional landscaping. Highly recommend for anyone looking for reliable lawn maintenance.',
     },
     {
       name: 'Michael Chen',
       rating: 5,
-      text: 'Professional lawn mowing service that\'s always on time. Their team handles everything from spring cleanup to fall leaf removal. Great value for quality work!',
+      text:
+        "Professional lawn mowing service that's always on time. Their team handles everything from spring cleanup to fall leaf removal. Great value for quality work!",
     },
     {
       name: 'Emily Rodriguez',
       rating: 5,
-      text: 'Needed emergency tree removal and 716 Lawn Care was quick, safe, and affordable. Best tree service in Western New York!',
+      text:
+        'Needed emergency tree removal and 716 Lawn Care was quick, safe, and affordable. Best tree service in Western New York!',
     },
   ];
 
@@ -87,22 +100,26 @@ function App() {
     {
       icon: Award,
       title: 'Premium Quality Service',
-      description: 'Professional lawn care and landscaping with meticulous attention to every detail of your property',
+      description:
+        'Professional lawn care and landscaping with meticulous attention to every detail of your property',
     },
     {
       icon: Clock,
       title: 'Reliable & Punctual',
-      description: 'Scheduled lawn maintenance services that respect your time with consistent weekly or bi-weekly visits',
+      description:
+        'Scheduled lawn maintenance services that respect your time with consistent weekly or bi-weekly visits',
     },
     {
       icon: DollarSign,
       title: 'Competitive Pricing',
-      description: 'Affordable lawn care rates with transparent quotes and no hidden fees for Buffalo area properties',
+      description:
+        'Affordable lawn care rates with transparent quotes and no hidden fees for Buffalo area properties',
     },
     {
       icon: Shield,
       title: 'Fully Licensed & Insured',
-      description: 'Professional lawn care company with full insurance coverage for your complete peace of mind',
+      description:
+        'Professional lawn care company with full insurance coverage for your complete peace of mind',
     },
   ];
 
@@ -110,25 +127,29 @@ function App() {
     {
       icon: Sun,
       season: 'Spring Services',
-      services: 'Lawn cleanup, mulching, fertilization, aeration, overseeding, and garden bed preparation',
+      services:
+        'Lawn cleanup, mulching, fertilization, aeration, overseeding, and garden bed preparation',
       color: 'from-yellow-400 to-orange-400',
     },
     {
       icon: Leaf,
       season: 'Summer Maintenance',
-      services: 'Weekly mowing, edging, trimming, weed control, lawn treatments, and irrigation management',
+      services:
+        'Weekly mowing, edging, trimming, weed control, lawn treatments, and irrigation management',
       color: 'from-green-400 to-green-600',
     },
     {
       icon: Wind,
       season: 'Fall Cleanup',
-      services: 'Leaf removal, gutter cleaning, lawn aeration, winterization, and property preparation',
+      services:
+        'Leaf removal, gutter cleaning, lawn aeration, winterization, and property preparation',
       color: 'from-orange-500 to-red-500',
     },
     {
       icon: Snowflake,
       season: 'Winter Services',
-      services: 'Snow plowing, snow removal, ice management, walkway clearing, and emergency services',
+      services:
+        'Snow plowing, snow removal, ice management, walkway clearing, and emergency services',
       color: 'from-blue-400 to-blue-600',
     },
   ];
@@ -171,7 +192,7 @@ function App() {
 
   return (
     <div className="min-h-screen bg-white">
-      {/* Hero Section - Highly Animated & Attractive */}
+      {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center">
         {/* Dynamic Image Slideshow Background */}
         <div className="absolute inset-0">
@@ -187,7 +208,8 @@ function App() {
                 alt={`Professional Lawn Care Buffalo NY ${index + 1}`}
                 className="w-full h-full object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-green-900/60"></div>
+              {/* slightly lighter overlay so text reads but images remain visible */}
+              <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/40 to-green-900/40"></div>
             </div>
           ))}
         </div>
@@ -197,7 +219,7 @@ function App() {
           {[...Array(8)].map((_, i) => (
             <Leaf
               key={i}
-              className="absolute text-green-400 opacity-20 animate-bounce"
+              className="absolute text-green-400 opacity-16 animate-bounce"
               style={{
                 top: `${Math.random() * 100}%`,
                 left: `${Math.random() * 100}%`,
@@ -211,15 +233,22 @@ function App() {
         </div>
 
         {/* Hero Content */}
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="relative z-10 max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="text-left space-y-8 pb-6">
-              <div className="inline-flex items-center space-x-2 bg-green-600/90 backdrop-blur-sm px-6 py-3 rounded-full animate-slide-up" style={{ animationDelay: '0.2s', opacity: 0 }}>
+            {/* LEFT - constrained width so headline never reaches image column */}
+            <div className="text-left space-y-8 pb-6 max-w-[680px]">
+              <div
+                className="inline-flex items-center space-x-2 bg-green-600/90 backdrop-blur-sm px-6 py-3 rounded-full animate-slide-up"
+                style={{ animationDelay: '0.2s', opacity: 0 }}
+              >
                 <Leaf className="w-5 h-5 text-white" />
                 <span className="text-white font-medium">Buffalo's #1 Lawn Care Service</span>
               </div>
 
-              <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white leading-[1.15] animate-slide-up" style={{ animationDelay: '0.4s', opacity: 0 }}>
+              <h1
+                className="text-5xl sm:text-6xl lg:text-6xl xl:text-7xl font-bold text-white leading-[1.08] sm:leading-[1.12] animate-slide-up"
+                style={{ animationDelay: '0.4s', opacity: 0 }}
+              >
                 Professional
                 <span className="block bg-gradient-to-r from-green-400 to-green-200 bg-clip-text text-transparent">
                   Lawn Care & Landscaping
@@ -227,22 +256,28 @@ function App() {
                 <span className="block text-4xl sm:text-5xl mt-4">Services in Buffalo, NY</span>
               </h1>
 
-              <p className="text-xl sm:text-2xl text-gray-200 animate-slide-up" style={{ animationDelay: '0.6s', opacity: 0 }}>
+              <p
+                className="text-lg sm:text-xl text-gray-200 animate-slide-up"
+                style={{ animationDelay: '0.6s', opacity: 0 }}
+              >
                 Expert lawn mowing, landscaping design, tree removal, and seasonal cleanup services.
                 Transform your outdoor space with Western New York's most trusted lawn care professionals.
               </p>
 
-              <div className="flex flex-col sm:flex-row gap-4 animate-slide-up" style={{ animationDelay: '0.8s', opacity: 0 }}>
+              <div
+                className="flex flex-col sm:flex-row gap-4 animate-slide-up"
+                style={{ animationDelay: '0.8s', opacity: 0 }}
+              >
                 <a
                   href="#quote"
-                  className="group relative px-8 py-5 bg-green-600 text-white font-bold text-lg rounded-full overflow-hidden transition-all duration-300 hover:bg-green-700 hover:scale-105 hover:shadow-2xl text-center"
+                  className="group relative px-8 py-4 bg-green-600 text-white font-bold text-lg rounded-full overflow-hidden transition-all duration-300 hover:bg-green-700 hover:scale-105 hover:shadow-2xl text-center"
                 >
                   <span className="relative z-10">Get Free Lawn Care Quote</span>
-                  <div className="absolute inset-0 bg-gradient-to-r from-green-400 to-green-600 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></div>
+                  <div className="absolute inset-0 bg-gradient-to-r from-green-400 to-green-600 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300" />
                 </a>
                 <a
                   href="tel:716-555-5296"
-                  className="px-8 py-5 bg-white text-green-600 font-bold text-lg rounded-full border-2 border-white transition-all duration-300 hover:bg-green-50 hover:scale-105 hover:shadow-xl text-center"
+                  className="px-8 py-4 bg-white text-green-600 font-bold text-lg rounded-full border-2 border-white transition-all duration-300 hover:bg-green-50 hover:scale-105 hover:shadow-xl text-center"
                 >
                   Call (716) 555-LAWN
                 </a>
@@ -260,8 +295,8 @@ function App() {
               </div>
             </div>
 
-            {/* Image Grid */}
-            <div className="hidden lg:grid grid-cols-2 gap-4 animate-scale-in" style={{ animationDelay: '1s', opacity: 0 }}>
+            {/* RIGHT - image grid kept visually to the right */}
+            <div className="hidden lg:grid grid-cols-2 gap-4 justify-self-end w-full max-w-[520px] animate-scale-in" style={{ animationDelay: '1s', opacity: 0 }}>
               <div className="space-y-4">
                 <img
                   src="https://i.ibb.co/WNfQ4QHr/hero-landscape.png"
@@ -293,7 +328,7 @@ function App() {
         {/* Scroll Indicator */}
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
           <div className="w-6 h-10 border-2 border-white rounded-full flex items-start justify-center p-2">
-            <div className="w-1 h-3 bg-white rounded-full animate-pulse"></div>
+            <div className="w-1 h-3 bg-white rounded-full animate-pulse" />
           </div>
         </div>
       </section>
@@ -330,12 +365,8 @@ function App() {
                         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
                         <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
                           <service.icon className="w-12 h-12 mb-4" />
-                          <h3 className="text-3xl font-bold mb-3">
-                            {service.title}
-                          </h3>
-                          <p className="text-lg text-gray-200 mb-6">
-                            {service.description}
-                          </p>
+                          <h3 className="text-3xl font-bold mb-3">{service.title}</h3>
+                          <p className="text-lg text-gray-200 mb-6">{service.description}</p>
                           <a
                             href="#quote"
                             className="inline-flex items-center bg-green-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-green-700 transition-colors"
