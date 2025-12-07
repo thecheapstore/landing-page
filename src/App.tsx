@@ -26,7 +26,7 @@ function App() {
   const [isVisible, setIsVisible] = useState<{ [key: string]: boolean }>({});
 
   const heroImages = [
-    'https://images.pexels.com/photos/1838640/pexels-photo-1838640.jpeg?auto=compress&cs=tinysrgb&w=1600',
+    'https://i.ibb.co/N6kfgKdL/main-blog-page-bg.png',
     'https://images.pexels.com/photos/1301856/pexels-photo-1301856.jpeg?auto=compress&cs=tinysrgb&w=1600',
     'https://images.pexels.com/photos/1105019/pexels-photo-1105019.jpeg?auto=compress&cs=tinysrgb&w=1600',
   ];
