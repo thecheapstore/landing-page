@@ -6,15 +6,23 @@
   body {
     @apply antialiased;
   }
+
+  /* small utility for hero heading fallback if you want to target the H1 directly */
+  .hero-heading {
+    /* keep a safe default line-height for very large headings */
+    line-height: 1.12;
+  }
 }
 
 @layer utilities {
+  /* animation utilities */
   .animate-fade-in {
     animation: fadeIn 1s ease-out forwards;
   }
 
+  /* softer, less jumpy slide-up (start slightly lower and slower) */
   .animate-slide-up {
-    animation: slideUp 0.8s ease-out forwards;
+    animation: slideUp 0.9s cubic-bezier(.22,.9,.28,1) forwards;
   }
 
   .animate-slide-in-left {
@@ -28,8 +36,14 @@
   .animate-scale-in {
     animation: scaleIn 0.6s ease-out forwards;
   }
+
+  /* small custom opacity utility used in the hero to avoid accidental invalid Tailwind classes */
+  .opacity-16 {
+    opacity: 0.16;
+  }
 }
 
+/* Keyframes */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -42,7 +56,7 @@
 @keyframes slideUp {
   from {
     opacity: 0;
-    transform: translateY(40px);
+    transform: translateY(24px); /* slightly more translate so the motion is perceptible but smooth */
   }
   to {
     opacity: 1;
@@ -75,7 +89,7 @@
 @keyframes scaleIn {
   from {
     opacity: 0;
-    transform: scale(0.9);
+    transform: scale(0.96);
   }
   to {
     opacity: 1;
@@ -83,6 +97,7 @@
   }
 }
 
+/* Parallax helper — disable fixed background on smaller/touch devices for performance & layout stability */
 .parallax-bg {
   background-attachment: fixed;
   background-position: center;
@@ -90,6 +105,34 @@
   background-size: cover;
 }
 
+/* On mobile and medium screens use scroll attachment (fixed can be buggy and expensive on mobile browsers) */
+@media (max-width: 1024px) {
+  .parallax-bg {
+    background-attachment: scroll;
+  }
+}
+
+/* Respect user motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .animate-fade-in,
+  .animate-slide-up,
+  .animate-slide-in-left,
+  .animate-slide-in-right,
+  .animate-scale-in {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition: none !important;
+  }
+}
+
+/* small utility to ensure hero images remain visible under overlay on very wide screens */
+@media (min-width: 1400px) {
+  .hero-image-constraint {
+    max-width: 560px;
+  }
+}
+
+/* Smooth scroll behavior */
 html {
   scroll-behavior: smooth;
 }
