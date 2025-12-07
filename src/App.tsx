@@ -219,7 +219,16 @@ function App() {
                 <span className="text-white font-medium">Buffalo's #1 Lawn Care Service</span>
               </div>
 
-              <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white leading-[1.15] animate-slide-up" style={{ animationDelay: '0.4s', opacity: 0 }}>
+             <h1 
+  className="
+    text-5xl sm:text-6xl lg:text-7xl 
+    font-bold text-white 
+    leading-[1.15] 
+    pb-2
+    animate-slide-up
+  " 
+  style={{ animationDelay: '0.4s', opacity: 0 }}
+>
                 Professional
                 <span className="block bg-gradient-to-r from-green-400 to-green-200 bg-clip-text text-transparent">
                   Lawn Care & Landscaping
