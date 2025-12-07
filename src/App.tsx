@@ -26,9 +26,10 @@ function App() {
   const [isVisible, setIsVisible] = useState<{ [key: string]: boolean }>({});
 
   const heroImages = [
-    'https://i.ibb.co/N6kfgKdL/main-blog-page-bg.png',
-    'https://images.pexels.com/photos/1301856/pexels-photo-1301856.jpeg?auto=compress&cs=tinysrgb&w=1600',
-    'https://images.pexels.com/photos/1105019/pexels-photo-1105019.jpeg?auto=compress&cs=tinysrgb&w=1600',
+    'https://i.ibb.co/RTB2n9Kh/hero-bg-SOD.png',
+    'https://i.ibb.co/tMNy2zYF/hero-bg-mowing.png',
+    'https://i.ibb.co/M5fHty7p/hero-bg-tree.png',
+    'https://i.ibb.co/gLMyKWQZ/hero-bg-patio.png',
   ];
 
   const services = [
@@ -264,24 +265,24 @@ function App() {
             <div className="hidden lg:grid grid-cols-2 gap-4 animate-scale-in" style={{ animationDelay: '1s', opacity: 0 }}>
               <div className="space-y-4">
                 <img
-                  src="https://images.pexels.com/photos/1105019/pexels-photo-1105019.jpeg?auto=compress&cs=tinysrgb&w=600"
+                  src="https://i.ibb.co/WNfQ4QHr/hero-landscape.png"
                   alt="Professional Landscaping Buffalo"
                   className="rounded-2xl shadow-2xl w-full h-48 object-cover transform hover:scale-105 transition-transform duration-500"
                 />
                 <img
-                  src="https://images.pexels.com/photos/1301856/pexels-photo-1301856.jpeg?auto=compress&cs=tinysrgb&w=600"
+                  src="https://i.ibb.co/whrqhCng/hero-lawn.png"
                   alt="Lawn Mowing Service"
                   className="rounded-2xl shadow-2xl w-full h-64 object-cover transform hover:scale-105 transition-transform duration-500"
                 />
               </div>
               <div className="space-y-4 pt-8">
                 <img
-                  src="https://images.pexels.com/photos/1838640/pexels-photo-1838640.jpeg?auto=compress&cs=tinysrgb&w=600"
-                  alt="Lawn Care Maintenance"
+                  src="https://i.ibb.co/mFCWSzKz/hero-snow.png"
+                  alt="Snow Removal Buffalo NY"
                   className="rounded-2xl shadow-2xl w-full h-64 object-cover transform hover:scale-105 transition-transform duration-500"
                 />
                 <img
-                  src="https://images.pexels.com/photos/8353813/pexels-photo-8353813.jpeg?auto=compress&cs=tinysrgb&w=600"
+                  src="https://i.ibb.co/VnRNym6/hero-tree.png"
                   alt="Tree Removal Buffalo NY"
                   className="rounded-2xl shadow-2xl w-full h-48 object-cover transform hover:scale-105 transition-transform duration-500"
                 />
